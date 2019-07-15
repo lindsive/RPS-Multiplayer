@@ -2,10 +2,79 @@
 <html lang="en">
 
 <head>
-    <script src="assets/javascrpt/app.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rock, Paper, Scissors</title>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
-    <script src="assets/javascrpt/app.js"></script>   
+    <script src="./assets/javascrpt/app.js"></script>
 </head>
+
+<body>
+    <div>
+        <h1>RPS Multiplayer</h1>
+    </div>
+
+    <div id="rpsButtons">
+        <button class="rps1" id="r1" value="rockPick1">r</button>
+        <button class="rps1" id="p1" value="paperPick1">p</button>
+        <button class="rps1" id="s1" value="scissorsPick1">s</button>
+    </div>
+
+    <div id="playerOne">
+        <div>
+            <h2>Player One</h2>
+        </div>
+
+        <div>
+            <p id="pick1">player one pick: </p>
+        </div>
+
+
+        <div id="wins1">
+            <p>wins:</p>
+        </div>
+
+        <div id="losses1">
+            <p>losses:</p>
+        </div>
+
+        <div id="tie1">
+            <p>tie:</p>
+        </div>
+    </div>
+
+    <div id="playerTwo">
+
+        <div class="rpsButtons2">
+            <button class="rps2" id="r2" value="rockTwo">r</button>
+            <button class="rps2" id="p2" value="paperTwo">p</button>
+            <button class="rps2" id="s2" value="scissorsTwo">s</button>
+        </div>
+
+        <div>
+            <h2>Player Two</h2>
+        </div>
+
+        <div>
+            <p id="pick2">player two pick</p>
+        </div>
+
+        <div id="wins2">
+            <p>wins:</p>
+        </div>
+
+        <div id="losses2">
+            <p>losses:</p>
+        </div>
+
+        <div id="tie2">
+            <p>tie:</p>
+        </div>
+    </div>
+
+
+</body>
 
 </html>
