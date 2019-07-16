@@ -5,32 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Rock, Paper, Scissors</title>
+    <!-- firebase -->
     <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>"code.jquery.com/jquery.js"</script>
     <script src="./assets/javascrpt/app.js"></script>
 </head>
 
 <body>
     <div>
         <h1>RPS Multiplayer</h1>
+        <p>To make your choice, type rock, paper, or scissors into the textbox!</p>
     </div>
 
-    <div id="rpsButtons">
-        <button class="rps1" id="r1" value="rockPick1">r</button>
-        <button class="rps1" id="p1" value="paperPick1">p</button>
-        <button class="rps1" id="s1" value="scissorsPick1">s</button>
+    <div>
+        <p>Player One</p>
+    </div>
+
+    <div>
+        <form>
+            <label for="playerOne">Pick:</label>
+            <input id="playerOneChoice" placeholder="Type Here!" type="text">
+            <span>
+                <button id= "submitChoice" type ="submit">Let's Play!</button>
+            </span>
+        </form>
     </div>
 
     <div id="playerOne">
-        <div>
-            <h2>Player One</h2>
-        </div>
 
         <div>
-            <p id="pick1">player one pick: </p>
+            <p id="pick1">Player One's Pick: </p>
         </div>
-
 
         <div id="wins1">
             <p>wins:</p>
@@ -47,18 +55,20 @@
 
     <div id="playerTwo">
 
-        <div class="rpsButtons2">
-            <button class="rps2" id="r2" value="rockTwo">r</button>
-            <button class="rps2" id="p2" value="paperTwo">p</button>
-            <button class="rps2" id="s2" value="scissorsTwo">s</button>
+        <div>
+            <p>Player Two</p>
         </div>
 
         <div>
-            <h2>Player Two</h2>
+            <form>
+                <label for="playerTwo">Pick:</label>
+                <input id="playerTwoChoice" placeholder="Type Here!" type="text">
+                <button id= "submitChoice2" type ="submit">Let's Play!</button>
+            </form>
         </div>
 
         <div>
-            <p id="pick2">player two pick</p>
+            <p id="pick2">Player Two's Pick: </p>
         </div>
 
         <div id="wins2">
