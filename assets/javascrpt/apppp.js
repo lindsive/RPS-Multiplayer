@@ -21,5 +21,9 @@ $(signIn).submit(function (event) {
     
     console.log(response.user)
 
+    var closeModal = $("#modal-signup");
+    M.Modal.getInstance(closeModal).close();
+
+    document.getElementById("signup-form").reset()
   })
 })
